@@ -48,9 +48,9 @@ class Premier:
         while i < self.nombre and self.nombre % i != 0:
             i = i + 1
         if i == self.nombre:
-            return "Le nombre", self.nombre, "est premier !"
+            return "Le nombre "+str(self.nombre)+" Lest premier !"
         else:
-            return "Ce n'est pas un nombre premier."
+            return "Le nombre "+str(self.nombre)+" n'est pas un nombre premier."
 
     
     #vérifie si une liste de nombre est premier
@@ -73,8 +73,8 @@ class Premier:
         elif compteur == 0:
             return "Aucun des nombres de cette liste  n'est  premier"
         else:
-            return f"Dans cette liste les nombre premier sont aux nombre de {compteur} soit: {lst_p},\n\
-            contre {len(self.liste)-compteur} nombres non premier :{lst_np}"
+            return f"Dans cette liste les nombres premier sont aux nombres de {compteur} soit: {lst_p},\n\
+contre {len(self.liste)-compteur} nombres non premier :{lst_np}"
 
     #Décompose les nombre en leur produits de facteurs premier
     def decompose(self, objet):
