@@ -4,7 +4,7 @@
     Créateur: Starkiller
     date de création : 14/07/2021
     langage de programation utiliser : Python3 (version:  3.9.2)
-    mise à jour : 14/07/2021, 12:50
+    mise à jour : 14/07/2021, 20:05
 
 """
 class Premier:
@@ -21,12 +21,15 @@ class Premier:
     def retourne_nb_p_and_pp_D(self, min, max):
         self.min, self.max = min, max
         for n in range(self.min, self.max+1):
-            for x in range(2, n):
-                if n % x == 0 or n == 0:
-                    self.liste.append(str(n)+'='+str(x)+'*'+str(n//x))
-                    break
+            if n > 1:
+                for x in range(2, n):
+                    if n % x == 0:
+                        self.liste.append(str(n)+" n'est pas un nombre premier:"+str(n)+'='+str(x)+'*'+str(n//x))
+                        break
+                else:
+                    self.liste.append(str(n)+" est un nombre premier")
             else:
-                self.liste.append(str(n)+" est un nombre premier")
+                self.liste.append(str(n)+" n'est pas un nombre premier")
         return self.liste
 
     #Retourne des nombre premier sur une plage donner
