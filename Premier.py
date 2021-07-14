@@ -56,7 +56,6 @@ class Premier:
         else:
             return "Le nombre "+str(self.nombre)+" n'est pas un nombre premier."
 
-    
     #vérifie si une liste de nombre est premier
     def Verifier_si_lst_nb_p(self, lst):
         self.liste = lst
