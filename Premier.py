@@ -8,7 +8,7 @@
 
 """
 class Premier:
-    
+
     def __init__(self,):
         self.min = 0
         self.max = 0
@@ -22,7 +22,7 @@ class Premier:
         self.min, self.max = min, max
         for n in range(self.min, self.max+1):
             for x in range(2, n):
-                if n % x == 0:
+                if n % x == 0 or n == 0:
                     self.liste.append(str(n)+'='+str(x)+'*'+str(n//x))
                     break
             else:
