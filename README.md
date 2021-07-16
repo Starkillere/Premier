@@ -1,7 +1,7 @@
 # Premier
 Premier is a module that allows you to manipulate prime numbers
 
-###### La méthode: retourne_nb_and_pp_D ######
+###### La méthode: prime_and_not ######
 
 Cette méthode retourne des nombres sur un intervalle donner dans une liste en indiquant si ils sont premier ou non.
 Elle prend deux paramètres la valeur minimal de l'intervalle et ça valeur maximal. 
@@ -18,7 +18,7 @@ Exemple:
   
     ["0 n'est pas un nombre premier", "1 n'est pas un nombre premier", '2 est un nombre premier', '3 est un nombre premier', "4 n'est pas un nombre premier:4=2*2", '5 est un nombre premier', "6 n'est pas un nombre premier:6=2*3", '7 est un nombre premier', "8 n'est pas un nombre premier:8=2*4", "9 n'est pas un nombre premier:9=3*3", "10 n'est pas un nombre premier:10=2*5"]
     
-###### La méthode: retourne_nb_p ######
+###### La méthode: prime_returner ######
 
 Cette méthode retourne l'ensemble des nombre premier sur un intervalle donner.
 Elle prend deux paramètres la valeur minimal de l'intevalle et ça valeur maximal.
