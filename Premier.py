@@ -4,7 +4,7 @@
     Créateur: Starkiller
     date de création : 14/07/2021
     langage de programation utiliser : Python3 (version:  3.9.2)
-    mise à jour : 14/07/2021, 20:05
+    mise à jour : 14/07/2021, 12:50
 
 """
 class Premier:
@@ -46,38 +46,60 @@ class Premier:
         return liste_value
     
     #vérifie si un nombre est premier 
-    def Verifier_si_nb_premier(self, nombre):
-        self.nombre = nombre
-        i = 2
-        while i < self.nombre and self.nombre % i != 0:
-            i = i + 1
-        if i == self.nombre:
-            return "Le nombre "+str(self.nombre)+" Lest premier !"
-        else:
-            return "Le nombre "+str(self.nombre)+" n'est pas un nombre premier."
+    def is_prime(self, objet):
+        self.random_object = objet
+        if type(self.random_object) == int or type(self.random_object) == str:
+            try:
+                self.random_object = int(self.random_object)
+            except ValueError:
+                return "Vérfictaion impossible !"
 
-    #vérifie si une liste de nombre est premier
-    def Verifier_si_lst_nb_p(self, lst):
-        self.liste = lst
-        lst_p, lst_np = [], []
-        compteur =  0 
-        for e in self.liste:
+            self.nombre = self.random_object
             i = 2
-            e = int(e)
-            while i < e and e % i != 0:
+            while i < self.nombre and self.nombre % i != 0:
                 i = i + 1
-            if i == e:
-                compteur += 1
-                lst_p.append(e)
+            if i == self.nombre:
+                return "Le nombre "+str(self.nombre)+" est premier !"
             else:
-                lst_np.append(e)
-        if compteur == len(self.liste):
-            return "Tout les nombres de cette liste sont premier."
-        elif compteur == 0:
-            return "Aucun des nombres de cette liste  n'est  premier"
-        else:
-            return f"Dans cette liste les nombres premier sont aux nombres de {compteur} soit: {lst_p},\n\
-contre {len(self.liste)-compteur} nombres non premier :{lst_np}"
+                return "Le nombre "+str(self.nombre)+" n'est pas un nombre premier."
+
+        elif type(self.random_object) == list:
+        
+            '''
+
+            for e in range(len(self.random_object):
+                try:
+                    self.random_object[e] = int(self.random_object[e])
+                except ValueError:
+                    print("objet non décomposable!")
+
+            '''
+            try: 
+               for e in range(len(self.random_object)):
+                   self.random_object[e] = int(self.random_object[e])
+            except ValueError:
+                return "objet non décomposable!"
+         
+            self.liste = self.random_object
+            lst_p, lst_np = [], []
+            compteur =  0 
+            for e in self.liste:
+                i = 2
+                e = int(e)
+                while i < e and e % i != 0:
+                    i = i + 1
+                if i == e:
+                    compteur += 1
+                    lst_p.append(e)
+                else:
+                    lst_np.append(e)
+            if compteur == len(self.liste):
+                return "Tout les nombres de cette liste sont premier."
+            elif compteur == 0:
+                return "Aucun des nombres de cette liste  n'est  premier"
+            else:
+                return f"Dans cette liste les nombres premier sont aux nombres de {compteur} soit: {lst_p},\n\
+    contre {len(self.liste)-compteur} nombres non premier :{lst_np}"
 
     #Décompose les nombre en leur produits de facteurs premier
     def decompose(self, objet):
