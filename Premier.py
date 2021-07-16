@@ -33,7 +33,7 @@ class Premier:
         return self.liste
 
     #Retourne des nombre premier sur une plage donner
-    def retourn_prime(self, min, max):
+    def prime_returner(self, min, max):
         self.min, self.max = min, max
         liste_value = []
         for n in range(self.min, self.max + 1):
