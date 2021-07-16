@@ -35,10 +35,10 @@ Exemple:
   
     [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
     
-###### La méthode: Verifier_si_nb_premier #######
+###### La méthode: is_prime #######
   
-Cette méthode vérifie si un nombre est premier.
-Elle ne prend qu'un paramètre, le nombre en question .
+Cette méthode vérifie si un nombre ou une liste de nombre est premier.
+Elle ne prend qu'un paramètre, le nombre ou la liste  en question .
   
 Exemple:
 
@@ -48,29 +48,14 @@ Exemple:
     instance = Premier()
     print(instance.Verifier_si_nb_premier(23))
     print(instance.Verifier_si_nb_premier(12))
-    
-  output:
-    
-    Le nombre 23 est premier !
-    Le nombre 12 n'est pas un nombre premier.
-    
-###### La méthode: Verifier_si_lst_nb_p ######
-
-Cette méthode vérifie si une liste  est premier.
-Elle ne prend qu'un paramètre, la liste en question .
-
-Exemple:
-
-  code:
-  
-    from Premier import Premier
-    instance = Premier()
     print(instance.Verifier_si_lst_nb_p([2,3,5,7,9,13,23]))
     print(instance.Verifier_si_lst_nb_p([1,4,6,8,10]))
     print(instance.Verifier_si_lst_nb_p([2,4,9,7,6,13,23,7,14]))
     
   output:
     
+    Le nombre 23 est premier !
+    Le nombre 12 n'est pas un nombre premier.
     Tout les nombres de cette liste sont premier.
     Aucun des nombres de cette liste  n'est  premier
     Dans cette liste les nombre premier sont aux nombre de 5 soit: [2, 7, 13, 23, 7],contre 4 nombres non premier :[4, 9, 6, 14]
