@@ -4,7 +4,7 @@
     Créateur: Starkiller
     date de création : 14/07/2021
     langage de programation utiliser : Python3 (version:  3.9.2)
-    mise à jour : 14/07/2021, 12:50
+    mise à jour : 16/07/2021 18h48
 
 """
 class Premier:
@@ -18,7 +18,7 @@ class Premier:
         self.boolen =  True
 
     #Retourne les  nombres premiers et non premiers sur une plage donner
-    def retourne_nb_p_and_pp_D(self, min, max):
+    def prime_and_not(self, min, max):
         self.min, self.max = min, max
         for n in range(self.min, self.max+1):
             if n > 1:
@@ -33,7 +33,7 @@ class Premier:
         return self.liste
 
     #Retourne des nombre premier sur une plage donner
-    def retourne_nb_p(self, min, max):
+    def retourn_prime(self, min, max):
         self.min, self.max = min, max
         liste_value = []
         for n in range(self.min, self.max + 1):
