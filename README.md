@@ -62,7 +62,7 @@ Exemple:
 
 ###### La méthode: decompose ######
 
-Cette méthode permet de décomposer en produit de vacteur premier un nombre ou les nombres d'une liste.
+Cette méthode permet de décomposer en produit de facteur premier un nombre ou les nombres d'une liste.
 Elle ne prend qu'un seul paramètre, un nombre ou une liste de nombres.
 
 Exemple:
