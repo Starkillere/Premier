@@ -3,7 +3,7 @@ Premier is a module that allows you to manipulate prime numbers
 
 ###### La méthode: prime_and_not ######
 
-Cette méthode retourne des nombres sur un intervalle donner dans une liste en indiquant si ils sont premier ou non.
+Cette méthode retourne des nombres sur un intervalle donné dans une liste en indiquant si ils sont premier ou non.
 Elle prend deux paramètres la valeur minimal de l'intervalle et ça valeur maximal. 
 
 Exemple:
@@ -20,8 +20,8 @@ Exemple:
     
 ###### La méthode: prime ######
 
-Cette méthode retourne l'ensemble des nombre premier sur un intervalle donner.
-Elle prend deux paramètres la valeur minimal de l'intevalle et ça valeur maximal.
+Cette méthode retourne l'ensemble des nombres premiers sur un intervalle donner.
+Elle prend deux paramètres la valeur minimal de l'intervalle et sa valeur maximal.
 
 Exemple:
   
@@ -37,8 +37,8 @@ Exemple:
     
 ###### La méthode: is_prime #######
   
-Cette méthode vérifie si un nombre ou une liste de nombre est premier.
-Elle ne prend qu'un paramètre, le nombre ou la liste  en question .
+Cette méthode vérifie si un nombre ou une liste de nombre est première.
+Elle ne prend qu'un paramètre, le nombre ou la liste  en question..
   
 Exemple:
 
@@ -62,7 +62,7 @@ Exemple:
 
 ###### La méthode: decompose ######
 
-Cette méthode permet de décomposer en produit de facteur premier un nombre ou les nombres d'une liste.
+Cette méthode permet de décomposer en produit de facteur premier un nombre ou les nombres d'des listes.
 Elle ne prend qu'un seul paramètre, un nombre ou une liste de nombres.
 
 Exemple:
