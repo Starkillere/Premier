@@ -5,7 +5,7 @@
     Créateur: Starkiller
     date de création : 14/07/2021
     langage de programation utiliser : Python3 (version:  3.9.2)
-    mise à jour : 16/07/2021 18h48
+    mise à jour : 06/08/2021 13h30
 
 """
 class Premier:
@@ -34,7 +34,7 @@ class Premier:
         return self.liste
 
     #Retourne des nombre premier sur une plage donner
-    def prime_returner(self, min, max):
+    def prime(self, min, max):
         self.min, self.max = min, max
         liste_value = []
         for n in range(self.min, self.max + 1):
