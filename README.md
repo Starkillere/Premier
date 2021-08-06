@@ -12,7 +12,7 @@ Exemple:
   
     from Premier import Premier
     instance = Premier()
-    print(instance.retourne_nb_p_and_pp_D(0, 10))
+    print(instance.prime_and_not(0, 10))
     
   output:
   
@@ -29,7 +29,7 @@ Exemple:
   
     from Premier import Premier
     instance = Premier()
-    print(instance.retourne_nb_p(0, 50))
+    print(instance.prime_returner(0, 50))
     
   output:
   
@@ -46,11 +46,11 @@ Exemple:
   
     from Premier import Premier
     instance = Premier()
-    print(instance.Verifier_si_nb_premier(23))
-    print(instance.Verifier_si_nb_premier(12))
-    print(instance.Verifier_si_lst_nb_p([2,3,5,7,9,13,23]))
-    print(instance.Verifier_si_lst_nb_p([1,4,6,8,10]))
-    print(instance.Verifier_si_lst_nb_p([2,4,9,7,6,13,23,7,14]))
+    print(instance.is_prime(23))
+    print(instance.is_prime(12))
+    print(instance.is_prime([2,3,5,7,9,13,23]))
+    print(instance.is_prime([1,4,6,8,10]))
+    print(instance.is_prime([2,4,9,7,6,13,23,7,14]))
     
   output:
     
